@@ -1,0 +1,40 @@
+# Open Manipulator X Control in Gazebo
+
+This ROS package allows you to control the Open Manipulator X in the Gazebo simulation environment. Follow the steps below to set up and run the package on Ubuntu 20.04 with ROS1.
+
+## Steps to Control Open Manipulator X in Gazebo
+
+### 1. Installation of Open Manipulator X
+
+The Open Manipulator X package was installed following the instructions provided in the official e-manual. You can access the manual here(https://emanual.robotis.com/docs/en/platform/openmanipulator_x/overview/). This manual provides detailed installation instructions for setting up the manipulator.
+
+### 2. Launching the Controller File
+
+To run the Open Manipulator in the Gazebo simulation environment, launch the controller file with the parameter `use_platform=false`.
+
+### 3. Launching Gazebo
+
+Start the Gazebo simulation by launching it and pressing the play button in the Gazebo interface to begin the simulation.
+
+### 4. Creating a ROS Package
+
+A new ROS package named `manipulator_x_control` was created. In this package:
+
+- A `scripts` folder was added.
+- A Python script named `final.py` was developed to control the Open Manipulator X in the Gazebo simulation.
+
+The `final.py` script implements a Python-based control system using ROS services. Its main purpose is to move the robot's joints and control its gripper through a sequence of specified joint positions. The script communicates with ROS services to achieve precise control over the manipulator's joints and gripper.
+
+### 5. Running the Script
+
+Execute the `final.py` script to control the Open Manipulator X in the Gazebo environment.
+
+### 6. Run this code in Hardware:
+Connect your robot.
+launch conntroller.
+Run script.
+
+## Video
+
+A video demonstrating the real-time simulation of the robot is included in the package folder.
+
